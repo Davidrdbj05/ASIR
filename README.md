@@ -12,10 +12,6 @@ En este tema vamos a trabajar con los principales programas que utiizaremos a lo
 <br />
 He modificado el archivo index.html del proyecto.
 <br />
->Esto es una cita
->>Esto es una cita anidada
->Esto es otra cita
-
 ~~~
 
 <html>
