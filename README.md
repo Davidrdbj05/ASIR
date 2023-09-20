@@ -5,5 +5,5 @@ En este tema vamos a trabajar con los principales programas que utiizaremos a lo
 - Git
 - Docker
 - VirtualBox
---
+<br />
 He modificado el archivo index.html del proyecto.
