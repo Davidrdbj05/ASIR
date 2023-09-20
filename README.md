@@ -10,7 +10,7 @@ En este tema vamos a trabajar con los principales programas que utiizaremos a lo
 - Docker
 - VirtualBox
 <br />
-He modificado el archivo index.html del proyecto.
+He modificado el archivo index.html del proyecto. He modificado el .md
 <br />
 
 ~~~
