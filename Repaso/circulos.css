@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.circuloRojo {
+#circuloRojo {
     background-color: red;
     border-radius: 50%;
     width: 100px;
@@ -11,7 +11,7 @@
     display: inline-block;
 }
 
-.circuloVerde {
+#circuloVerde {
     background-color: green;
     border-radius: 50%;
     width: 100px;
@@ -20,7 +20,7 @@
     display: inline-block;
 }
 
-.circuloAzul {
+#circuloAzul {
     background-color: blue;
     border-radius: 50%;
     width: 100px;

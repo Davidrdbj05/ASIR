@@ -9,19 +9,28 @@
 <body>
     <div class="divCirculos">
         <h1>Círculos</h1>
-            <div class="circuloRojo">
-                <button class="boton">Ocultar</button>
+            <div id="circuloRojo">
             </div>
-            <div class="circuloVerde">
-                <button class="boton">Ocultar</button>
+            <button class="boton" onclick="cambia('circuloRojo')">cambiar</button>
+
+            <div id="circuloVerde">
+
             </div>
-            <div class="circuloAzul">
-                <button class="boton">Ocultar</button>
+            <button class="boton" onclick="cambia('circuloVerde')">cambiar</button>
+            <div id="circuloAzul">
+                
             </div>
+            <button class="boton" onclick="cambia('circuloAzul')">cambiar</button>
     </div>
 
     <script>
-
+        function cambia(id){
+            if (document.getElementById(id).style.visibility=="hidden"){
+                document.getElementById(id).style.visibility="visible";
+            }
+            else
+                document.getElementById(id).style.visibility="hidden";
+        }
     </script>
 
 </body>
