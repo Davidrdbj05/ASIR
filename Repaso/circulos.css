@@ -1,0 +1,34 @@
+.divCirculos {
+    text-align: center;
+}
+
+.circuloRojo {
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-inline: 10px;
+    display: inline-block;
+}
+
+.circuloVerde {
+    background-color: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-inline: 10px;
+    display: inline-block;
+}
+
+.circuloAzul {
+    background-color: blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-inline: 10px;
+    display: inline-block;
+}
+
+.boton {
+    margin-top: 110px;
+}
