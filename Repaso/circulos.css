@@ -28,3 +28,8 @@
     margin-inline: 10px;
     display: inline-block;
 }
+
+#boton {
+    position: absolute;
+    text-align: center;
+}
