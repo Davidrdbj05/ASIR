@@ -7,7 +7,29 @@
 </head>
 <body>
     
-    <h1></h1>
+    <h1>Generador de DNI</h1>
+    <input id="caja" type="text" maxlength="8" placeholder="Escribe aquí">
+    <button id="bComprobar" onclick="comprobar()">Comprobar</button>
+    <br>
+    <p id="pResult"></p>
+
+    <script>
+        function comprobar() {
+            const nDNI = document.getElementById("caja").value;
+            const letra = 'TRWAGMYFPDXBNJZSQVHLCKET';
+
+            if (nDNI.length != 8) {
+                alert('Tamaño incorrecto')
+            }
+            else if (Number.isInteger(parseFloat(nDNI)) == false) {
+                alert('Se introdujo un carácter distinto de números')
+            }
+            else {
+                let lDNI = letra.substring((nDNI%23),((nDNI%23)+1));
+                document.getElementById("pResult").innerHTML = lDNI;
+            }
+        }
+    </script>
 
 </body>
 </html>

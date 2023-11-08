@@ -19,7 +19,7 @@
         const mEur = 0.94;
 
         function euro(){
-            var valor = parseInt(document.getElementById("caja").value);
+            var valor = parseFloat(document.getElementById("caja").value);
 
             if (Number.isInteger(valor) == false){
                 alert('Se introdujo un carácter distinto de números')
@@ -33,7 +33,7 @@
             }
         }
         function dollar(){
-            var valor = parseInt(document.getElementById("caja").value);
+            var valor = parseFloat(document.getElementById("caja").value);
 
             if (Number.isInteger(valor) == false){
                 alert('Se introdujo un carácter distinto de números')
