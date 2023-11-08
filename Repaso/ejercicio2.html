@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+    <h1>Conversor Dólar-Euro</h1>
+    <input id="caja" type="text" placeholder="Escribe aquí">
+    <button id="convEuro" onclick="euro()">Euro</button>
+    <button id="convDollar" onclick="dollar()">Dólar</button>
+    <br>
+    <p id="pResult"></p>
+
+    <script>
+        const mDollar = 1.07;
+        const mEur = 0.94;
+
+        function euro(){
+            var number = document.getElementById("caja").value;
+            var result = number * mDollar;
+            document.getElementById("pResult").innerHTML = (result.toFixed(2)) + '€';
+        }
+        function dollar(){
+            var number = document.getElementById("caja").value;
+            var result = number * mEur;
+            document.getElementById("pResult").innerHTML = '$' + (result.toFixed(2));
+        }
+    </script>
+
+</body>
+</html>
