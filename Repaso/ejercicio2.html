@@ -19,24 +19,30 @@
         const mEur = 0.94;
 
         function euro(){
-            var number = parseInt(document.getElementById("caja").value);
+            var valor = parseInt(document.getElementById("caja").value);
 
-            if (number < 0){
+            if (Number.isInteger(valor) == false){
+                alert('Se introdujo un carácter distinto de números')
+            }
+            else if (valor < 0) {
                 alert('El número no puede ser negativo')
             }
             else {
-                var result = number * mDollar;
+                var result = valor * mDollar;
                 document.getElementById("pResult").innerHTML = (result.toFixed(2)) + '€';
             }
         }
         function dollar(){
-            var number = document.getElementById("caja").value;
+            var valor = parseInt(document.getElementById("caja").value);
 
-            if (number < 0){
+            if (Number.isInteger(valor) == false){
+                alert('Se introdujo un carácter distinto de números')
+            }
+            else if (valor < 0) {
                 alert('El número no puede ser negativo')
             }
             else {
-                var result = number * mEur;
+                var result = valor * mEur;
                 document.getElementById("pResult").innerHTML = '$' + (result.toFixed(2));
             }
         }
