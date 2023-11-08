@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +19,26 @@
         const mEur = 0.94;
 
         function euro(){
-            var number = document.getElementById("caja").value;
-            var result = number * mDollar;
-            document.getElementById("pResult").innerHTML = (result.toFixed(2)) + '€';
+            var number = parseInt(document.getElementById("caja").value);
+
+            if (number < 0){
+                alert('El número no puede ser negativo')
+            }
+            else {
+                var result = number * mDollar;
+                document.getElementById("pResult").innerHTML = (result.toFixed(2)) + '€';
+            }
         }
         function dollar(){
             var number = document.getElementById("caja").value;
-            var result = number * mEur;
-            document.getElementById("pResult").innerHTML = '$' + (result.toFixed(2));
+
+            if (number < 0){
+                alert('El número no puede ser negativo')
+            }
+            else {
+                var result = number * mEur;
+                document.getElementById("pResult").innerHTML = '$' + (result.toFixed(2));
+            }
         }
     </script>
 
