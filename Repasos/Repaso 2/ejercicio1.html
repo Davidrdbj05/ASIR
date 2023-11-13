@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+    <h1>IMC</h1>
+    <input id="cajaMasa" type="text" placeholder="Masa en KG">
+    <input id="cajaAltura" type="text" placeholder="Altura en CM">
+    <button id="buttCalculo" onclick="calcular()">Calcular</button>
+    <br>
+    <p id="pResult"></p>
+
+    <script>
+        function calcular(){
+            let masa = document.getElementById("cajaMasa").value;
+            let altura = document.getElementById("cajaAltura").value;
+                if (masa == null || altura == null || masa <= 0 || altura <= 0){
+                    document.getElementById("pResult").innerHTML = 'Peso o Altura inválidos';
+                }
+            else {
+                altura = altura / 100;
+                let IMC = (masa/(altura*altura)).toFixed(2);
+                    if (IMC >= 30){
+                        document.getElementById("pResult").innerHTML = IMC + 'Obesidad';
+                    }
+                    else if (IMC >= 25 && IMC < 30){
+                        document.getElementById("pResult").innerHTML = IMC + 'Peso superior al normal';
+                    }
+                    else if (IMC >= 18.5 && IMC < 25){
+                        document.getElementById("pResult").innerHTML = IMC + 'Peso normal';
+                    }
+                    else {
+                        document.getElementById("pResult").innerHTML = IMC + 'Peso inferior al normal';
+                    }
+
+            }
+        }
+    </script>
+
+</body>
+</html>
