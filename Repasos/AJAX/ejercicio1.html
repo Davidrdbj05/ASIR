@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>OpenWeatherMap</title>
+</head>
+<body>
+    
+    <input id="ciudad">
+    <button id="buscar">Buscar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        $(document).ready(function () {
+            $('#buscar').click(function (){
+                let ciudad = $('#ciudad').val() // Coge el valor del campo ciudad
+                let apiKey = 'dddbb1e67c0b128112a430fc0ce835ad6'; // Key personal de OpenWeather
+
+                // Hacemos la llamada AJAX
+                $.ajax({
+                    url: "https://api.openweathermap.org/data/2.5/weather?q="+ciudad+"&appid="+apiKey+"&units=metric",
+                    success: function (data) {
+                        $('#resultado').html(`
+                        <h2>${data.name}, ${data.sys.country}</h2>
+                        <p>Temperatura: ${data.main.temp}</p>
+                        <p>${data.name}, ${data.main.humidity}</p>
+                        <p>${data.name}, ${data.main.asd}</p>`)
+                    },
+                    error: function(data){
+                        alert(data.cod);
+                    },
+                    });
+                    });
+                    });
+    </script>
+</body>
+</html>

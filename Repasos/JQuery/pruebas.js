@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
     $("#btnBorrar").click(function (){
         let prMens = prompt('Escribe aquí').toLocaleLowerCase();
-        if (prMens == "todos"){
+        if (prMens == "todo"){
             $("#div1").fadeOut(750);
             $("#div2").fadeOut(750);
             $("#ansiedad").fadeIn(2000).addClass("ansiedad");
