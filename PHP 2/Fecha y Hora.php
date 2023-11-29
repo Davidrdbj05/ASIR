@@ -16,7 +16,7 @@
     <?php
         date_default_timezone_set('Spain/Madrid');
         setlocale(LC_ALL, 'es_ES.UTF-8');
-        echo ucwords(strftime("%A %d %B %Y"));
+        echo ucwords(strftime("%A %d %B %Y %R"));
     ?>
 </body>
 </html>
