@@ -7,8 +7,8 @@
 </head>
 <body>
 <?php
-echo "<h1>PHP</h1>";
-$mainPHP = './PHP/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+echo "<h1>PHP 1</h1>";
+$mainPHP = './PHP 1/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
 $nFiles  = scandir($mainPHP);
 
 // Filtrar los directorios "." y ".."
@@ -17,7 +17,7 @@ $nFiles = array_diff($nFiles, array('..', '.'));
 // Imprimir los archivos y directorios
 echo "<ul>";
 foreach ($nFiles as $file) {
-    echo "<li><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/$file' target='_blank'>$file</a></li>";
+    echo "<li><a href='https://myblog-qyfyw32sx5.live-website.com/PHP 1/$file' target='_blank'>$file</a></li>";
 }
 echo "</ul>";
 ?>
