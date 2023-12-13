@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Chat</h1>
+            <p id="cMens2"></p>
+            <p id="cMens1">Bienvenido al chat</p>
+    </div>
+
+    <input id="inputEnviar" type="text" placeholder="Escribe aquí">
+    <button id="btnEnviar" onclick="enviar()">Enviar</button>
+
+    <script>
+        function enviar() {
+            let oldMens = document.getElementById("cMens1").innerHTML;
+            let newMens = document.getElementById("inputEnviar").value;
+            document.getElementById("cMens2").innerHTML = oldMens;
+            document.getElementById("cMens1").innerHTML = newMens;
+        }
+    </script>
+</body>
+</html>
