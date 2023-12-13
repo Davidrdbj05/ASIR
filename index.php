@@ -35,7 +35,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 1/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP 1/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -50,7 +50,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 2/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP 2/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -65,7 +65,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 3/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP 3/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -80,7 +80,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 4/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP 4/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
