@@ -1,28 +1,68 @@
-<!DOCTYPE html>
+<?php
+
+// Función para generar el código HTML de un tweet
+function generarTweet($usuario, $contenido, $fecha) {
+    $html = '<div class="tweet">';
+    $html .= '<strong>' . $usuario . '</strong>';
+    $html .= '<p>' . $contenido . '</p>';
+    $html .= '<span class="fecha">' . $fecha . '</span>';
+    $html .= '</div>';
+    return $html;
+}
+
+// Array de tweets
+$tweets = array(
+    array(
+        'usuario' => 'usuario1',
+        'contenido' => 'Este es el primer tweet. ¡Hola, mundo!',
+        'fecha' => '2023-11-29 12:00:00'
+    ),
+    array(
+        'usuario' => 'usuario2',
+        'contenido' => 'Segundo tweet. ¡PHP es genial!',
+        'fecha' => '2023-11-29 12:30:00'
+    ),
+    array(
+        'usuario' => 'usuario3',
+        'contenido' => 'Hola',
+        'fecha' => '2023-12-19 12:00:00'
+    )
+);
+
+// Generar el documento HTML
+$html = '<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso de for each parte 3</title>
+    <title>Tweets</title>
     <style>
-      .tweet {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 8px;
-        background-color: #f9f9f9;        
-      }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        .tweet {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .fecha {
+            color: #888;
+            font-size: 12px;
+        }
     </style>
 </head>
-<body>
-<?php
-$palabras = array("Darío"=>"¿Jugamos al tutti frutti?", "José"=>"Oh, sho soy buenísimo", 
-"Luís"=>"¿Cómo es?", "Mario"=>"Es por categoría, hay que buscar una palabra, primero se dice una letra...", 
-"Diego"=>"No, no se dice, se elige al azar. Lo estás explicando para la mierda");
-foreach($palabras as $x => $val) {
-  echo "<div class='tweet'>";
-  echo "<p><strong>$x:</strong> $val</p>";
-  echo "</div>";}
-    ?>
-</body>
-</html>
+<body>';
+
+foreach ($tweets as $tweet) {
+    $html .= generarTweet($tweet['usuario'], $tweet['contenido'], $tweet['fecha']);
+}
+
+$html .= '</body></html>';
+
+// Imprimir el documento HTML
+echo $html;
+?>

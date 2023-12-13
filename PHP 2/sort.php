@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso de sort</title>
+    <title>SORT</title>
 </head>
 <body>
-<?php
-/*Realiza un script que dado un array de palabras 
-lo presente en pantalla ordenado lexicograficamente.*/
-$palabras = array("Perro", "Gato", "Búfalo", "Sapo");
-sort($palabras);
-foreach ($palabras as $value) {
-  echo "<p>$value</p>";}
+    <?php
+        $palabras = [
+            "HOLA",
+            "HELLO",
+            "BYE",
+            "ADIOS",
+            "ROCK",
+            "ROCA",
+            "PHONE",
+            "TELEFONO",
+            "KEYBOARD",
+            "TECLADO"
+        ];
+
+        sort($palabras);
+
+        foreach ($palabras as $val) {
+            echo "$val <br>";
+        }
     ?>
 </body>
 </html>
