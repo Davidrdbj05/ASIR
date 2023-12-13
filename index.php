@@ -35,7 +35,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP 1/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP 1/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -50,7 +50,37 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP 2/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP 2/$file' target='_blank'>$file</a></p>";
+        }
+        ?>
+    </div>
+    <div class="item">
+        <?php
+        echo "<h1>PHP 2</h1>";
+        $mainPHP = './PHP 3/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        $nFiles  = scandir($mainPHP);
+
+        // Filtrar los directorios "." y ".."
+        $nFiles = array_diff($nFiles, array('..', '.'));
+
+        // Imprimir los archivos y directorios
+        foreach ($nFiles as $file) {
+        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP/PHP 3/$file' target='_blank'>$file</a></p>";
+        }
+        ?>
+    </div>
+    <div class="item">
+        <?php
+        echo "<h1>PHP 4</h1>";
+        $mainPHP = './PHP 4/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        $nFiles  = scandir($mainPHP);
+
+        // Filtrar los directorios "." y ".."
+        $nFiles = array_diff($nFiles, array('..', '.'));
+
+        // Imprimir los archivos y directorios
+        foreach ($nFiles as $file) {
+        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP/PHP 4/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
