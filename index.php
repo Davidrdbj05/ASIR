@@ -27,7 +27,7 @@
     <div class="item">
         <?php
         echo "<h1>PHP 1</h1>";
-        $mainPHP = './PHP 1/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        $mainPHP = './PHP/PHP 1/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
         $nFiles  = scandir($mainPHP);
 
         // Filtrar los directorios "." y ".."
@@ -35,14 +35,14 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP 1/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 1/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
     <div class="item">
         <?php
         echo "<h1>PHP 2</h1>";
-        $mainPHP = './PHP 2/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        $mainPHP = './PHP/PHP 2/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
         $nFiles  = scandir($mainPHP);
 
         // Filtrar los directorios "." y ".."
@@ -50,14 +50,14 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP 2/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 2/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
     <div class="item">
         <?php
-        echo "<h1>PHP 2</h1>";
-        $mainPHP = './PHP 3/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        echo "<h1>PHP 3</h1>";
+        $mainPHP = './PHP/PHP 3/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
         $nFiles  = scandir($mainPHP);
 
         // Filtrar los directorios "." y ".."
@@ -65,14 +65,14 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP/PHP 3/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 3/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
     <div class="item">
         <?php
         echo "<h1>PHP 4</h1>";
-        $mainPHP = './PHP 4/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        $mainPHP = './PHP/PHP 4/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
         $nFiles  = scandir($mainPHP);
 
         // Filtrar los directorios "." y ".."
@@ -80,7 +80,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='https://myblog-qyfyw32sx5.live-website.com/PHP/PHP/PHP 4/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP 4/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
