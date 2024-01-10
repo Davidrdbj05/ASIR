@@ -36,6 +36,7 @@ if (isset($_POST['submit'])) {
     $apellidos = filter_var($_POST['apellidos']);
     $mail = filter_var($_POST['mail']);
     $DNI = filter_var($_POST['dni']);
+}
 ?>
 </body>
 </html>

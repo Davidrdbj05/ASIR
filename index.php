@@ -86,7 +86,7 @@
     </div>
     <div class="item">
         <?php
-        echo "<h1>PHP 4</h1>";
+        echo "<h1>Examen PHP</h1>";
         $mainPHP = './ExamenPHP/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
         $nFiles  = scandir($mainPHP);
 
@@ -96,6 +96,21 @@
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
         echo "<p><a href='http://davrb01.thsite.top/htdocs/ExamenPHP/$file' target='_blank'>$file</a></p>";
+        }
+        ?>
+    </div>
+    <div class="item">
+        <?php
+        echo "<h1>MYSQL</h1>";
+        $mainPHP = './PHP/MYSQL/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        $nFiles  = scandir($mainPHP);
+
+        // Filtrar los directorios "." y ".."
+        $nFiles = array_diff($nFiles, array('..', '.'));
+
+        // Imprimir los archivos y directorios
+        foreach ($nFiles as $file) {
+        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/MYSQL/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
