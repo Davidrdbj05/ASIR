@@ -87,7 +87,7 @@
     <div class="item">
         <?php
         echo "<h1>Examen PHP</h1>";
-        $mainPHP = './ExamenPHP/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
+        $mainPHP = './PHP/ExamenPHP/';  // Asumiendo que tu directorio PHP está en la misma ubicación que este archivo
         $nFiles  = scandir($mainPHP);
 
         // Filtrar los directorios "." y ".."
@@ -95,7 +95,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/htdocs/ExamenPHP/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/ExamenPHP/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
