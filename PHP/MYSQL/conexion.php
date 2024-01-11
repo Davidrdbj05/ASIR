@@ -6,5 +6,5 @@ $database = 'thsi_35561548_database';
 $conn = mysqli_connect($host,$user,$pass,$database);   
 if (!$conn) {                                             
     die("Conexión fallida con base de datos: " . mysqli_connect_error());     
-  }
+  } else {echo("<p>Conexión Lograda</p>");}
 ?>

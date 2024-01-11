@@ -1,6 +1,6 @@
 <?php
     // Conexión al servidor
-    include "conexion.php";
+    include "db.php";
     // Conexión a base de datos mediante PDO
     $result = $conn->query("SELECT * FROM usuarios LIMIT 1");
     if ($result->num_rows > 0) {

@@ -35,7 +35,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP1/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP1/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -50,7 +50,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP2/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP2/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -65,7 +65,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP3/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP3/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -80,7 +80,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/PHP4/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/PHP4/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -95,7 +95,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/ExamenPHP/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/ExamenPHP/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
@@ -110,7 +110,7 @@
 
         // Imprimir los archivos y directorios
         foreach ($nFiles as $file) {
-        echo "<p><a href='http://davrb01.thsite.top/htdocs/PHP/MYSQL/$file' target='_blank'>$file</a></p>";
+        echo "<p><a href='http://davrb01.thsite.top/PHP/MYSQL/$file' target='_blank'>$file</a></p>";
         }
         ?>
     </div>
